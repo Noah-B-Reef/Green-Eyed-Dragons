@@ -4,15 +4,15 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <book xml:id="Green-Eyed-Dragons">
+    <title>Green-Eyed Dragons</title>
+    <subtitle>Dragons and other Mathematical Monsters</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-general-problems.ptx" />
 
 
     <!-- Include backmatter -->
