@@ -9,5 +9,5 @@
 
   <!-- include sections -->
   <xi:include href="sec-dragons.ptx" />
-
+  <xi:include href="sec-weighted-coin.ptx" />
 </chapter>

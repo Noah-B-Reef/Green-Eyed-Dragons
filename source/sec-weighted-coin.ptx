@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-weighted-coin" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>A Weighted Coin</title>
+  <p>
+    Consider the following puzzle:
+  </p>
+  <blockquote>
+    <p> 
+      <em>
+      You are given twelve coins, eleven of which have the same weight, and one of which has a weight different from the others (either heavier or lighter, you do not know). 
+      You have a balance scale. What is the minimum number of weighings required in order to guarantee that you can determine which coin has the different weight, and also whether it is heavier or lighter than the rest?
+      </em>
+    </p>
+  </blockquote> 
+  
+  <subsection>
+  <title>Python Program</title>
+  <program interactive="activecode" language="python">
+    def func(x):
+        print x
+    func(2)
+  </program>
+  </subsection>
+</section>

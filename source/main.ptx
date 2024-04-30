@@ -7,7 +7,7 @@
   <book xml:id="Green-Eyed-Dragons">
     <title>Green-Eyed Dragons</title>
     <subtitle>Dragons and other Mathematical Monsters</subtitle>
-
+     
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 

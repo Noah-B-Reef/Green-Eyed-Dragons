@@ -48,6 +48,30 @@
     Since the dragons are equipped with the knowledge that there is <em>at least one</em> dragon with green eyes, we have <m>|G| \geq 1</m>.
   </p>
   <remark>
-  The total number of dragons is <m>N = O_g^{(k)} + O_b^{(k)} + 1</m> for <m> k \in G \cup B</m>.
+  The total number of dragons is <m>N = |G| + |B|</m>.
   </remark>
+  <remark>
+   <m>|G| \geq O_g^{(i)} \geq 1</m> and <m>|B| \geq O_b^{(j)} </m> for all <m>i \in G</m> and <m>j \in B</m>.
+  </remark>
+  <subsection>
+    <title>Case 1: <m>|G| = 1</m></title>
+    <p>
+       Let's first consider the case where there is a single dragon with green eyes, then <m>O_g^{(i)} = 0</m> and <m>O_b^{(i)} = N-1</m> for all <m>i \in G</m>. This leds to a contradiction since
+       <m>O_g^{(i)} = 0 \not\geq 1</m>, and thus the dragon must belong to <m>G</m> that is it must have green eyes and will turn into a sparrow at midnight.
+    </p>
+    <p>
+      Now presumably the other brown-eyed dragons are unaware of the true number of green-eyed dragons, and thus will need to determine whether or not their eye color is green (which of course it is not!).
+      Since <m>O_g^{(j)} = 1</m> and <m>O_b^{(i)} = N-2</m> for <m>j \in B</m>, they understand that if the green-eyed dragon also sees <m>N-2</m> brown-eyed dragons, then there would not exist sufficient information
+      for the green-eyed dragon to deduce that their eyes are green and hence would not transform into a swallow. Thus if the green-eyed dragon does not transform into a swallow at midnight, then there are 
+      truly <m>N-2</m> brown-eyed dragons, however since the dragon does transform then there are actually <m>N-1</m> brown-eyed dragons. This means that in this case all remaining dragons will be able to deduce that they have brown eyes.
+      </p>
+  </subsection>
+  <subsection>
+  <title>Case 2: <m>|G| = 2</m></title>
+    <p>
+      Now let's consider the case where there are two dragons with green eyes, then <m>O_g^{(i)} = 1</m> and <m>O_b^{(i)} = N-2</m> for all <m>i \in G</m>. This leds to a contradiction since
+      <m>O_g^{(i)} = 1 \not\geq 1</m>, and thus the dragon must belong to <m>G</m> that is it must have green eyes and will turn into a sparrow at midnight.
+    </p>
+  </subsection>
+  
 </section>
