@@ -16,10 +16,7 @@
   
   <subsection>
   <title>Python Program</title>
-  <program interactive="activecode" language="python">
-    def func(x):
-        print x
-    func(2)
-  </program>
+  <console>
+  </console>
   </subsection>
 </section>
