@@ -16,6 +16,6 @@
   
   <subsection>
   <title>Python Tutorial</title>
-  <console></console>
+  <console language="python" interactive="codelens"></console>
   </subsection>
 </section>
