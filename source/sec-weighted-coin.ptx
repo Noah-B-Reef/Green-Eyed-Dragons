@@ -16,9 +16,5 @@
   
   <subsection>
   <title>Python Program</title>
-  <console>
-  <program interactive="activecode" language="python">
-  </program>
-  </console>
-  </subsection>
+  
 </section>
