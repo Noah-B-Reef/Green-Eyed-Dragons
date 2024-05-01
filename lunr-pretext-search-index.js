@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "A Weighted Coin",
-  "body": " A Weighted Coin  Consider the following puzzle:    You are given twelve coins, eleven of which have the same weight, and one of which has a weight different from the others (either heavier or lighter, you do not know). You have a balance scale. What is the minimum number of weighings required in order to guarantee that you can determine which coin has the different weight, and also whether it is heavier or lighter than the rest?     Python Program  def func(x): print x func(2)   "
+  "body": " A Weighted Coin  Consider the following puzzle:    You are given twelve coins, eleven of which have the same weight, and one of which has a weight different from the others (either heavier or lighter, you do not know). You have a balance scale. What is the minimum number of weighings required in order to guarantee that you can determine which coin has the different weight, and also whether it is heavier or lighter than the rest?     Python Program   "
 },
 {
   "id": "backmatter-2",
