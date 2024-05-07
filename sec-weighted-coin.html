@@ -122,13 +122,18 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Green-Eyed Dragons</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-9" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Case 1: <span class="process-math">\(|G| = 1\)</span></span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-10" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Case 2: <span class="process-math">\(|G| = 2\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-8" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Case 1: <span class="process-math">\(N = 1\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-9" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Case 2: <span class="process-math">\(N = 2\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-10" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Case 3: <span class="process-math">\(N = 3\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#sec-section-name-14" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Video Explaination</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-weighted-coin.html" class="internal"><span class="codenumber">1.2</span> <span class="title">A Weighted Coin</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-weighted-coin.html#sec-weighted-coin-4" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Python Tutorial</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-weighted-coin.html#sec-weighted-coin-4" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Solution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-weighted-coin.html#sec-weighted-coin-5" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Python Code</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -140,9 +145,22 @@ window.MathJax = {
 <div class="para" id="sec-weighted-coin-2">Consider the following puzzle:</div>
 <blockquote class="blockquote" id="sec-weighted-coin-3"><div class="para" id="sec-weighted-coin-3-1"><em class="emphasis">You are given twelve coins, eleven of which have the same weight, and one of which has a weight different from the others (either heavier or lighter, you do not know). You have a balance scale. What is the minimum number of weighings required in order to guarantee that you can determine which coin has the different weight, and also whether it is heavier or lighter than the rest?</em></div></blockquote>
 <section class="subsection" id="sec-weighted-coin-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Python Tutorial</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Solution</span>
 </h3>
-<div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="console"></pre></div></section></section></div>
+<div class="para logical" id="sec-weighted-coin-4-2">
+<div class="para">Let’s start by dividing the twelve coins into three sets of four coins each.</div>
+<div class="displaymath process-math" id="sec-weighted-coin-4-2-1">
+\begin{align*}
+A \amp= \{a_1,a_2,a_3,a_4\}\\
+B \amp= \{b_1,b_2,b_3,b_4\}\\
+C \amp= \{c_1,c_2,c_3,c_4\}
+\end{align*}
+</div>
+<div class="para">next we weigh set A against set B. If the two sets have the same weight, then the odd coin is in set C. In this case, weigh <span class="process-math">\(c_1,c_2,c_3\)</span> against <span class="process-math">\(a_1,a_2,a_3\text{.}\)</span> If the two sets have the same weight, then the odd coin is <span class="process-math">\(c_4\text{.}\)</span> If the two sets have different weights, then the odd coin is one of <span class="process-math">\(c_1,c_2,c_3\text{.}\)</span> Weigh <span class="process-math">\(c_1\)</span> against <span class="process-math">\(c_2\text{.}\)</span> If they have the same weight, then the odd coin is <span class="process-math">\(c_3\text{.}\)</span> If they have different weights, then the odd coin is the lighter of the two.</div>
+</div></section><section class="subsection" id="sec-weighted-coin-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Python Code</span>
+</h3>
+<iframe id="sec-weighted-coin-5-2" width="600" height="600" src="sec-weighted-coin-5-2-if.html"></iframe></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-section-name.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
