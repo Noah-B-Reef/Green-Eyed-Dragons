@@ -32,46 +32,66 @@
     </p>
   </blockquote>
   <p>
+  Open the tab below for the solution:
+  </p>
 
-     In order to solve this problem let's start off by defining some notation:
+  <solution>
+  <p>
+    All <m>100</m> dragons will transform into sparrows on the <m>100</m>th day after the visitor's departure.
+  </p>
+  </solution>
+  
+  <p>
+
+     A more detailed explanation is as follows, first consider two key pieces of information that the dragons have to work with:
   </p>
   <definition  xml:id="def-dragon-terms">
-     <ul>
-       <li>Let <m>G</m> be the indexing set for the dragons who have green-eyes</li>
-       <li>Let <m>B</m> be the indexing set for the dragons who have brown-eyes</li>
-       <li>Let <m>N</m> be the total number of dragons of the population</li>
-       <li>Let <m>O_g^{(i)}</m> be the number of green-eyed dragons observed by dragon <m>i</m></li>
-       <li>Let <m>O_b^{(j)}</m> be the number of brown-eyed dragons observed by dragon <m>j</m></li> 
-      </ul>
+     <ol>
+       <li>Let There is <em>at least one</em> dragon with green-eyes</li>
+       <li>Every dragon now knows <m>(1)</m></li>
+      </ol>
   </definition>
+  <subsection>
+    <title>Case 1: <m>N = 1</m></title>
+    <p>
+       Let's first consider the case where there is a single dragon with green eyes, then you are effectively telling the single dragon it has green-eyes and so will turn into a long-tailed sparrow at midnight.
+    </p>
+  </subsection>
+  <subsection>
+  <title>Case 2: <m>N = 2</m></title>
+    <p>
+      Now let's consider the case where there are two dragons with green eyes, say <m>A</m> and <m>B</m>. Then <m>A</m> will see that <m>B</m> has green eyes, and knows that if <m>B</m> sees that <m>A</m>
+      doesn't have green-eyes then <m>B</m> will conclude that it is the only green-eyed dragon and transform. <m>B</m> will think the same. So on the second day <m>A</m> and <b>B</b> will see each other, conclude that
+      they are both green-eyed and thus transform on the <m>2</m>nd night.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Case 3: <m>N = 3</m></title>
+    <p>
+    Now let's consider the case where there are three dragons with green eyes, say <m>A</m>, <m>B</m> and <m>C</m>. 
+    Then <m>A</m> will see that <m>B</m> and <m>C</m> have green eyes, and knows that if <m>B</m> and <m>C</m> see that <m>A</m> doesn't have green-eyes then <m>B</m> and <m>C</m> will conclude that they are the only green-eyed dragons and transform on the <m>2</m>nd night. 
+    <m>B</m> and <m>C</m> will think the same. So on the third day <m>A</m>, <m>B</m> and <m>C</m> will see each other, conclude that they are all green-eyed and thus transform on the <m>3</m>rd night.
+    </p>
+  </subsection>
   <p>
-    Since the dragons are equipped with the knowledge that there is <em>at least one</em> dragon with green eyes, we have <m>|G| \geq 1</m>.
+    This pattern continues for all <m>N</m> dragons, where <m>N</m> is the number of dragons with green eyes. So we have the following theorem:
   </p>
-  <remark>
-  The total number of dragons is <m>N = |G| + |B|</m>.
-  </remark>
-  <remark>
-   <m>|G| \geq O_g^{(i)} \geq 1</m> and <m>|B| \geq O_b^{(j)} </m> for all <m>i \in G</m> and <m>j \in B</m>.
-  </remark>
-  <subsection>
-    <title>Case 1: <m>|G| = 1</m></title>
+  <theorem>
     <p>
-       Let's first consider the case where there is a single dragon with green eyes, then <m>O_g^{(i)} = 0</m> and <m>O_b^{(i)} = N-1</m> for all <m>i \in G</m>. This leds to a contradiction since
-       <m>O_g^{(i)} = 0 \not\geq 1</m>, and thus the dragon must belong to <m>G</m> that is it must have green eyes and will turn into a sparrow at midnight.
+      If there are <m>N</m> dragons with green eyes, then all <m>N</m> dragons will transform into sparrows on the <m>N</m>th day after the visitor's departure.
     </p>
-    <p>
-      Now presumably the other brown-eyed dragons are unaware of the true number of green-eyed dragons, and thus will need to determine whether or not their eye color is green (which of course it is not!).
-      Since <m>O_g^{(j)} = 1</m> and <m>O_b^{(i)} = N-2</m> for <m>j \in B</m>, they understand that if the green-eyed dragon also sees <m>N-2</m> brown-eyed dragons, then there would not exist sufficient information
-      for the green-eyed dragon to deduce that their eyes are green and hence would not transform into a swallow. Thus if the green-eyed dragon does not transform into a swallow at midnight, then there are 
-      truly <m>N-2</m> brown-eyed dragons, however since the dragon does transform then there are actually <m>N-1</m> brown-eyed dragons. This means that in this case all remaining dragons will be able to deduce that they have brown eyes.
-      </p>
-  </subsection>
+  </theorem>
+  <p>
+  Thus on the <m>100</m>th day after the visitor's departure, all <m>100</m> dragons will transform into sparrows. The new piece of information you gave the dragons is that every dragon on the island <em>knows</em>
+  there is at least one dragon with green eyes. This is the key piece of information that allows the dragons to deduce their own eye color.
+  </p>
+
   <subsection>
-  <title>Case 2: <m>|G| = 2</m></title>
-    <p>
-      Now let's consider the case where there are two dragons with green eyes, then <m>O_g^{(i)} = 1</m> and <m>O_b^{(i)} = N-2</m> for all <m>i \in G</m>. This leds to a contradiction since
-      <m>O_g^{(i)} = 1 \not\geq 1</m>, and thus the dragon must belong to <m>G</m> that is it must have green eyes and will turn into a sparrow at midnight.
-    </p>
+  <title>Video Explaination</title>
+  <p>
+  Here's a video explaination of a similar problem:
+  </p>
+  <video youtube="98TQv5IAtY8"/>
   </subsection>
-  
+
 </section>

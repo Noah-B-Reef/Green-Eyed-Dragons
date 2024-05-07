@@ -13,9 +13,21 @@
       </em>
     </p>
   </blockquote> 
-  
   <subsection>
-  <title>Python Tutorial</title>
-  <console language="python" interactive="codelens"></console>
+  <title>Solution</title>
+  <p>
+    Let's start by dividing the twelve coins into three sets of four coins each. 
+    <md>
+    <mrow>A \amp= \{a_1,a_2,a_3,a_4\}</mrow>
+    <mrow>B \amp= \{b_1,b_2,b_3,b_4\}</mrow>
+    <mrow>C \amp= \{c_1,c_2,c_3,c_4\}</mrow>
+    </md>
+    next we weigh set A against set B. If the two sets have the same weight, then the odd coin is in set C. In this case, weigh <m>c_1,c_2,c_3</m> against <m>a_1,a_2,a_3</m>. If the two sets have the same weight, then the odd coin is <m>c_4</m>. If the two sets have different weights, then the odd coin is one of <m>c_1,c_2,c_3</m>. Weigh <m>c_1</m> against <m>c_2</m>. If they have the same weight, then the odd coin is <m>c_3</m>. If they have different weights, then the odd coin is the lighter of the two.
+  </p>
+  </subsection>
+  <subsection>
+  <title>Python Code</title>
+    <interactive platform="javscript" source="https://gist.github.com/Noah-B-Reef/ac28585a27a4b336c270be9748ec555d.js" />
+    
   </subsection>
 </section>
